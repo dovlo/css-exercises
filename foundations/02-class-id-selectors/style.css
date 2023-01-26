@@ -1,0 +1,19 @@
+.basic {
+    background-color:#ff000060;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+.cool {
+    font-size: 24px
+}
+
+#bigblue {
+    color: #0000ff;
+    font-size: 36px;
+}
+
+#greenback {
+    background-color: #00ff00a8;
+    font-size: 24px;
+    font-weight: bold;
+}
