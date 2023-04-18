@@ -8,7 +8,6 @@ body {
 
 .header, .footer {
   display: flex;
-  justify-content: space-between;
   /* This (along with column flex direction) creates the basic header-footer layout */
 }
 
@@ -33,31 +32,42 @@ body {
 
 .main {
   display: flex;
+  flex: 1;
   /* This creates a new flexbox which contains the sidebar and the content */
 }
 
 .sidebar {
-  height: calc(100vh - 72px - 72px); /* height = viewport - height of header & footer */
   width: 300px;
   background: royalblue;
   flex: 0 0 auto;
   box-sizing: border-box;
   padding-right: 16px;
+  font-size: 24px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 32px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 300px;
+  padding: 16px;
+  margin: 16px;
+  display: flex;
 }
 
 ul {
-  list-style: none;
+  list-style: none; /* removes bullets on list */
   padding: 0 20px;
   line-height: 200%;
 }
 
 a {
   color: white;
-  text-decoration: none; /* removes underlines */
+  text-decoration: none; /* removes underlines on links */
 }
